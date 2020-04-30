@@ -1,4 +1,4 @@
-let display = null;
+
 
 
 let zerobutt = document.querySelector(".zero");
@@ -109,5 +109,11 @@ multiplybutt.addEventListener("click", function() {
 let clearbutt = document.querySelector(".clear");
 clearbutt.addEventListener("click", function() {
     let displayOutput = document.querySelector(".display");
-    displayOutput.innerHTML = null;
+    displayOutput.innerHTML = " ";
+});
+
+let equalbutt = document.querySelector(".equals");
+equalbutt.addEventListener("click", function() {
+    let displayOutput = document.querySelector(".display");
+    displayOutput.innerText = eval(displayOutput.innerText);
 });
